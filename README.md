@@ -139,7 +139,5 @@ Made with ❤️ by [Your Name/Organization] | [Contribute](#) | [Report Issues]
 
 ---
 
-You now have a complete GitHub project structure with all necessary files, including a `README.md` file that explains the project and provides instructions on building and running the application. Simply copy these files into your repository, adjust any environment-specific details, and you're ready to push to GitHub and Docker Hub. Happy coding!
-
 ## Proof of Functionality
 The project was tested with sample dates in /data/dates.txt. The task successfully counted 5 Wednesdays and wrote the result to /data/dates-wednesdays.txt, confirming correct functionality.
