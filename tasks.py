@@ -46,10 +46,11 @@ def handle_a2(task_description: str) -> str:
 
 def handle_a3(task_description: str) -> str:
     """
-    A3: Count the number of Wednesdays in /data/dates.txt and write the count to /data/dates-wednesdays.txt.
+    A3: Count the number of Wednesdays in data/dates.txt and write the count to data/dates-wednesdays.txt.
     """
-    input_file = "/data/dates.txt"
-    output_file = "/data/dates-wednesdays.txt"
+    input_file = "data/dates.txt"
+    output_file = "data/dates-wednesdays.txt"
+
     count = 0
     with open(input_file, "r", encoding="utf-8") as f:
         for line in f:
@@ -374,7 +375,7 @@ def handle_task(task_description: str) -> str:
         return handle_a1(task_description)
     elif "prettier" in task_lower:
         return handle_a2(task_description)
-    elif ("/data/dates.txt" in task_description and "wednesday" in task_lower) or ("# of wednesdays" in task_lower):
+    elif ("data/dates.txt" in task_description and "wednesday" in task_lower) or ("# of wednesdays" in task_lower):
         return handle_a3(task_description)
     elif "/data/contacts.json" in task_description:
         return handle_a4(task_description)
